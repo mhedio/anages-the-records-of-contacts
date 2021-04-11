@@ -42,11 +42,7 @@
         {
             "id": 6,
             "name": "lokas",
-<<<<<<< HEAD
-            "surname": "gall",
-=======
             "surname": "Belkhiria",
->>>>>>> 713ec9e85e4778f90629d3d5cc629e371bccc95c
             "number": "017601258",
             "birthday": "01.01.2000",
             "address": "strasse 12"
@@ -60,8 +56,4 @@
             "address": "strasse 12"
         }
     ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 713ec9e85e4778f90629d3d5cc629e371bccc95c
