@@ -1,0 +1,60 @@
+{
+  "contacts": [
+    {
+      "id": 2,
+      "name": "Med",
+      "surname": "Belkhiria",
+      "number": "017601258",
+      "birthday": "01.01.2000",
+      "address": "strasse 12"
+    },
+    {
+      "id": 3,
+      "name": "Mhb",
+      "surname": "Belkhiria",
+      "number": "017601258",
+      "birthday": "01.01.2000",
+      "address": "strasse 12"
+    },
+    {
+      "name": "hhhhh",
+      "surname": "",
+      "number": "",
+      "birthday": "",
+      "address": "",
+      "id": 4
+    },
+    {
+      "name": "tttttt",
+      "surname": "",
+      "number": "",
+      "birthday": "",
+      "address": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "surname": "",
+      "number": "",
+      "birthday": "",
+      "address": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "surname": "",
+      "number": "",
+      "birthday": "",
+      "address": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "surname": "",
+      "number": "",
+      "birthday": "",
+      "address": "",
+      "id": 8
+    }
+  ]
+}

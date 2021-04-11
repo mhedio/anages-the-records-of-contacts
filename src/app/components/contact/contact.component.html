@@ -1,0 +1,76 @@
+<div class="row my-4 mx-auto">
+    <div class="col-md-6 mx-auto">
+        <h3>Manager the records of contacts</h3>
+    </div>
+    <div class="col-md-6">
+    </div>
+</div>
+<div class="row my-4 mx-auto">
+    <div class="col-md-6 mx-auto">
+        <div class="row">
+
+            <div class="col">
+                <h3>list of Contact</h3>
+            </div>
+            <div class="col-md-4">
+                <button (click)="showForm = !showForm" class="btn btn-dark btn-sm"><i class="fa fa-plus"></i> New Contact </button>
+            </div>
+        </div>
+        <form action="" *ngIf="showForm">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="label">Name</label>
+                        <input [(ngModel)]="myContact.name" id="name" type="text " class="form-control " placeholder="First name ">
+                    </div>
+                    <div class="col ">
+                        <label for="label ">Surname</label>
+                        <input [(ngModel)]="myContact.surname" id="surname" type="text " class="form-control " placeholder="Last name ">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="label ">Number</label>
+                <input [(ngModel)]="myContact.number" id="number" type="text" class="form-control " placeholder="Number ">
+            </div>
+            <div class="form-group ">
+                <label for="label ">Birthday</label>
+                <input [(ngModel)]="myContact.birthday" id="birthday" type="date " class="form-control ">
+            </div>
+            <div class="form-group ">
+                <label for="inputAddress ">Address</label>
+                <input [(ngModel)]="myContact.address" id="address" type="text " class="form-control " id="inputAddress " placeholder="1234 Main Staße ">
+            </div>
+
+            <div class="row ">
+                <div class="col-md-4 "></div>
+                <div class="col-md-4 "></div>
+                <div class="col-md-6 mx-auto ">
+
+                    <button *ngIf="editForm" ( click)="updateContact()" class=" btn btn-warning btn-block my-2 ">
+                    <i class="fa fa-refresh "></i> Update Contact</button>
+                    <button (click)="persistContact()" class=" btn btn-success btn-block my-2 ">
+                      <i class="fa fa-send "></i> Confirm Contact</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row ">
+    <div class="col-md-6 mx-auto ">
+        <div>
+            <input (keyup)="searchContact()" [(ngModel)]=" searchText " placeholder="Search... " type="text " class="form-control ">
+        </div>
+        <ul class="list-group ">
+            <li *ngFor="let contact of resultContacts " class=" list-group-item d-flex justify-content-between align-items-center ">
+                <button (click)="editContact(contact) " class="btn btn-warning btn-sm ">
+                  <i class="fa fa-pencil "></i>
+                </button> {{ contact.name }} {{ contact.surname}}
+                <button (click)="deleteContact(contact.id) " class=" btn btn-sm btn-dark ">
+                  <i class=" fa fa-trash "></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
